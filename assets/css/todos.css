@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto";
-  background-image: url('/assets/images/stardust.png');
+  background-image: url("../images/stardust.png");
 }
 
 #container {
