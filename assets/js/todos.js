@@ -3,6 +3,12 @@ $("ul").on("click","li", function(){
   $(this).toggleClass("completed");
 });
 
+$("ul").sortable({
+    stop: function(event, ui) {
+      $(this).appendTo(this);
+    }
+});
+
 //click x to delete to do
 $("ul").on("click","span", function(evt){
   $(this).parent().fadeOut(500, function(){
